@@ -2,71 +2,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Photo App</title>
+    <title>Personal Details</title>
 </head>
 <body>
-    <h1>Cat photo App</h1>
-    <h2>Cat photos</h2>
-<section id="Cat Lists">
-    <p>click here to view more<a href ="#Cat Lists"> cat photos.(anchor tag)</a></p>
-    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Cat Photo">
+    <form action="/data" method="get">
+     <p>
 
-    <h2>Cat Lists</h2>
-    <h3>Things Cat love:</h3>
-    
-    <ul>
-        <li>cat lip</li>
-        <li>laser pointers</li>
-        <li>lasagna</li>
-    </ul>
-
-    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg">
-    
-    <p>Cats love lasagne</p>
-    
-    <h3>Top 3 things cats hate</h3>
-    
-    <ol>
-        <li>flea problem</li>
-        <li>thunder</li>
-        <li>other cats </li>
-    </ol>
-
-    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg">
-    
-    <p>cat <b>hate</b> other cats.</p>
-
-    <h2>Cat table</h2>
-    
-    <table border="1" >;
-
-        <tr>
-            <th>cat 1</th>
-            <th>cat 2</th>
-            <th>cat 3</th>
-        </tr>
-        <tr>
-            <td rowspan="2">Cat-row 1 Cat-col 1</td>
-            <td>Cat-row 1 Cat-col 2</td>
-            <td>Cat-row 1 Cat-col 3</td>
-        </tr>
-        <tr>
-            <td>Cat-row 2 Cat-col 2</td>
-            <td>Cat-row 2 Cat-col 3</td>
-        </tr>
-        <tr>
-            <td colspan="3">Cat-row 3 Cat-col 1</td>
-        </tr>
-
-    </table>
-
-    <h2>Summary</h2>
-    
+        Personal details <br>
+        salutation <br>
+        <select id="salutation" name="salutation" required>
+            <option value="--none--">--none--</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+        </select>
+        
+    </p>
     <p>
-        <strong>This is strong tag</strong>Lorem ipsum dolor sit amet<b>This is b tag</b>consectetur adipisicing elit. Dolores <i>This is i tag</i> quo ad dolor illum nam delectus error pariatur placeat eaque dolore aliquam fuga unde consequatur <br><em>This is em tag</em> sed voluptatibus harum, laudantium a cupiditate eveniet natus amet nostrum ab numquam. Nihil, pariatur a? Obcaecati minus, dignissimos optio qui atque repellendus mollitia aliquid recusandae
-         omnis! 
-    
-    
 
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="abcd" required>
+    </p>
+    <p>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="abcd" required>
+    </p>
+    <p>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+    </p>
+    <p>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com"required>
+    </p>
+    <p>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+    </p>
+    <p>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" required></textarea>
+    </p>
+    <p>
+
+        <button type="submit">Submit Query</button>
+    </p>
+     
 </body>
 </html>
