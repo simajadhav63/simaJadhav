@@ -1,41 +1,62 @@
-* {
+*{
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    background: #f5f6f7;
-    font-family: sans-serif;
-  }
-  
-  .header{
-    background-color: #0a0a23;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 4px solid #fdb347;
-    padding: 32px;
-  }
-  
-  .gallery {
+    background-color: rgb(86, 86, 247);
+}
+
+#main{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 10px;
-  }
-  
-  .gallery img {
-    width: 100%;
-    max-width: 350px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  
+    margin-top: 30px;
+    background-color: rgb(19, 18, 18);
+    width: 500px;
+    height: 110px;
+    margin-left: 450px;
+    border-radius: 8px;
+}
+input{
+    height: 55px;
+    width: 250px;
+    background-color: white;
+    margin-right: 30px;
+    border-radius: 7px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+button{
+    height: 55px;
+    width: 140px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    height: 100px;
+    width: 98px;
+    background-color: rgb(24, 23, 23);
+    border-radius: 5px;
+}
+#age{
+    margin-left: 560px;
+    background-color: rgb(23, 24, 24);
+    color: white;
+    font-size: 24px;
+}
